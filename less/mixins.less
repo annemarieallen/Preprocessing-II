@@ -1,1 +1,33 @@
 // Mixins in here
+
+.flex-center(){
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+.margin-mix(){
+	margin: 2%; 
+	padding: 2%;
+}
+
+.img-size(@h){
+    height:@h;
+    width: auto;
+}
+
+.button(@background,@color:#fff){
+    display: inline-block;
+    padding: 8px 25px; 
+    border-radius: 6px;
+
+    font-size: 2rem; 
+
+    background: @background; 
+    color: @color; 
+
+    &:hover{
+        background: lighten(@background, 30%);
+        color: pink;
+    }
+}
